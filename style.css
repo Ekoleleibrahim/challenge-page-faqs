@@ -1,0 +1,91 @@
+/* Importation de la police Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, 
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --clouds: #ecf0f1;
+    --violet: #8e44ad;
+    --gray: #576574;
+    
+}
+
+body{
+    background-image: url(images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.container{
+    width: min(100%, 600px);
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+details{
+    border-top: 1px solid var(--clouds);
+    padding: 10px 0;
+}
+
+details p{
+    color: var(--gray);
+}
+
+details[open] div .minus{
+    display: block;
+}
+details[open] div .plus{
+    display: none;
+}
+.minus{
+    display: none;
+}
+
+summary{
+    list-style: none;;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+summary:hover{
+    color: var(--violet);
+}
+
+@media all and (max-width: 580px){
+    body{
+        background-image: url(images/background-pattern-mobile.svg);
+        padding: 50px 20px;
+    }
+}
