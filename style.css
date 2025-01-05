@@ -24,6 +24,9 @@ body{
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     padding: 80px 20px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .flex{
