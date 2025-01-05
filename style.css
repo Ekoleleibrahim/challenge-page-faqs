@@ -19,7 +19,9 @@
 
 body{
     background: url(images/background-pattern-desktop.svg);
-    background-size: cover;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     padding: 80px 20px;
 }
